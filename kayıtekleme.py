@@ -19,23 +19,22 @@ class kayit_ekrani(QMainWindow):
         # super().__init__(parent, flags)
         super().__init__()
            
-        x.setWindowTitle("... Uygulaması")
+        x.setWindowTitle("Kütüphane Kayıt Uygulaması")
 
 
         layout = QVBoxLayout() # layout = QHBoxLayout()
 
 
-        layout.addWidget(QLabel("Adı:"))
+        layout.addWidget(QLabel("Kullanıcı Adı Soyadı:"))
         x.ad_input = QLineEdit()
         layout.addWidget(x.ad_input)
-        layout.addWidget(QLabel("Telefonu:"))
+        layout.addWidget(QLabel("Telefon Numarası:"))
         x.numara_input = QLineEdit()
         layout.addWidget(x.numara_input)
-        layout.addWidget(QCheckBox("Personel mi"))
-        x.dugme_kaydet = QPushButton("Kaydet")
+        x.dugme_kaydet = QPushButton("Giriş Yap")
         layout.addWidget(x.dugme_kaydet)
         x.dugme_kaydet.clicked.connect(x.kaydet)
-        layout.addWidget(QLabel("..."))
+        layout.addWidget(QLabel("Bilgilerinizi eksiksiz giriniz!"))
 
 
         widget = QWidget() ; widget.setLayout(layout)

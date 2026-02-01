@@ -73,7 +73,7 @@ class kayit_listele(QMainWindow):
 
 
 if __name__ == "__main__":
-    app = QApplication([]);
+    app = QApplication([])
     pencere = kayit_listele()
-    pencere.show();
+    pencere.show()
     app.exec()

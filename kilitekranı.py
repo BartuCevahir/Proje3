@@ -3,13 +3,13 @@ from PyQt6.QtWidgets import *
 
 app = QApplication(sys.argv)
 window = QMainWindow()
-window.setWindowTitle("... Uygulaması")
-window.setFixedWidth(300)
-window.setFixedHeight(200)
+window.setWindowTitle("Kütüphane Kayıt Uygulaması")
+window.setFixedWidth(500)
+window.setFixedHeight(300)
 
 layout = QVBoxLayout() # layout = QHBoxLayout()
 
-layout.addWidget(QLabel("Kullanıcı adı:"))
+layout.addWidget(QLabel("Ad:"))
 layout.addWidget(QLineEdit())
 layout.addWidget(QLabel("Şifre:"))
 layout.addWidget(QLineEdit())

@@ -6,7 +6,7 @@ class ana_ekran(QMainWindow):
         super().__init__()
 
 
-        self.setWindowTitle("rehber Programı")
+        self.setWindowTitle("Kütüphane Kayıt Programı")
 
 
         central_widget = QWidget()
@@ -19,6 +19,7 @@ class ana_ekran(QMainWindow):
 
 
         dugme2 = QPushButton("KAYITLAR")
+        dugme2.clicked.connect(self.kayıtlistele)
         layout.addWidget(dugme2)
 
 
@@ -35,6 +36,12 @@ class ana_ekran(QMainWindow):
         x.kayit_ekleme_ekrani = kayıtekleme.kayit_ekrani()
         x.kayit_ekleme_ekrani.show()
        
+    def kayıtlistele(x):
+        import kayit_listeleme
+        x.kayit_ekleme_ekrani = kayit_listeleme.()
+        x.kayit_ekleme_ekrani.show()
+       
+
 app = QApplication([])
 window = ana_ekran()
 window.show()
