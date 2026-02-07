@@ -43,8 +43,8 @@ class kayit_listele(QMainWindow):
 
         # QTableWidget oluştur (4 sütunlu)
         x.kayit_tablosu = QTableWidget()
-        x.kayit_tablosu.setColumnCount(3)
-        x.kayit_tablosu.setHorizontalHeaderLabels(["ADI SOYADI", "TELEFON", "TC"])
+        x.kayit_tablosu.setColumnCount(2)
+        x.kayit_tablosu.setHorizontalHeaderLabels(["ADI SOYADI", "TELEFON NO"])
         # x.kayit_tablosu.cellClicked.connect(x.satir_tiklandi)
 
 

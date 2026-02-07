@@ -46,5 +46,5 @@ class kayit_ekrani(QMainWindow):
 if __name__ == "__main__":
     app = QApplication([]);
     pencere = kayit_ekrani()
-    pencere.show();
+    pencere.show()
     app.exec()
