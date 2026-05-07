@@ -21,3 +21,4 @@ Son seçeneğimizde önceki kayıtlarımızı silebiliyoruz.
 <img height="200px" src="resimler/sil.png" />
 <br>
 3.projem bu şekilde.
+
